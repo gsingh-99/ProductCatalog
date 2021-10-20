@@ -1,0 +1,22 @@
+Models:
+Products (id, name, @OneToOne ProductType)
+ProductType (id, name)
+
+Controller:
+ProductDataAdministration
+2 Methoden für die Actions und eine 1 Routing Methode
+url/listProductsByTypeId/{productId}
+url/listProductsTypes
+
+ServiceClasses:
+ProductDataService
+CRUD für Products
+
+Output:
+Models als JSON
+
+Datenbank:
+Dao
+ProductRepository
+ProductTypeRepository
+2 Tabellen
